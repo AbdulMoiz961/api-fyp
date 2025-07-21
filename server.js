@@ -18,7 +18,7 @@ app.post("/analyze-xray", async (req, res) => {
 
   try {
     const response = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/model:generateContent?key=${AI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/model:generateContent?key=${API_KEY}`,
       {
         contents: [
           {
